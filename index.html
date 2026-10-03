@@ -248,6 +248,8 @@
   }
   .bub.me{background:#E8EEFE;color:var(--blue);align-self:flex-end;font-weight:600}
   .qr.solid{border:none;background:transparent}
+  .qr.has-img{border:none;background:#fff;overflow:hidden}
+  .qr img{width:100%;height:100%;display:block}
 
   /* ---------- title + close furniture ---------- */
   .logos{display:flex;gap:18px;align-items:center}
@@ -590,8 +592,9 @@
       <div class="row"><span style="width:26px"></span>Is the last-updated date within twelve months?</div>
       <div class="row"><span style="width:26px"></span>Could your own engineer follow it without asking you?</div>
     </div>
-    <!-- QR: theprivacylabs.com compliance scanner. Generated code drops in here, 280x280 -->
-    <div class="qr" data-qr="scanner" style="left:1330px;top:322px">QR &mdash; scanner</div>
+    <!-- QR: https://theprivacylabs.com/dpdp-tools/dpdp-compliance-scanner
+         From Downloads/qrcode-url.png, flattened onto white with a quiet zone and embedded. -->
+    <div class="qr has-img" data-qr="scanner" style="left:1330px;top:322px"><img alt="Scan for the compliance scanner" src="data:image/png;base64,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"></div>
     <div class="caption" data-cap style="left:1330px;top:648px;width:450px;opacity:0">
       Scan for a <b>free check of your own policy</b>, run against these same questions.
     </div>
