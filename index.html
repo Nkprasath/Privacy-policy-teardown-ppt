@@ -1239,7 +1239,7 @@ function startShow(el, from = 0) {
     items.forEach((li, j) => li.classList.toggle('on', j === k));
   };
   show(i);
-  shows.set(el, { i, timer: setInterval(() => { i = (i + 1) % imgs.length; shows.get(el).i = i; show(i); }, 3500) });
+  shows.set(el, { i, timer: setInterval(() => { i = (i + 1) % imgs.length; shows.get(el).i = i; show(i); }, 2000) });
 }
 function stopShow(el) {
   const st = shows.get(el);
