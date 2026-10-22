@@ -404,7 +404,7 @@
     <div class="viewport">
       <div class="page">
         <h4>Privacy Policy</h4>
-        <div class="stamp">LAST UPDATED 22 OCTOBER 2026</div>
+        <div class="stamp">LAST UPDATED 14 MARCH 2024</div>
 
         <h5>1. Introduction</h5>
         <p>This Privacy Policy explains how we collect, use, store and disclose your personal information when you access our website, mobile application and related services. <span class="cl" data-cl="promise">We are committed to protecting your personal data and will always handle it responsibly.</span> By continuing to use the Services you agree to the practices described here.</p>
@@ -438,7 +438,7 @@
 <template id="tpl-cover">
   <div class="cover">
     <div class="ttl">Privacy Policy</div>
-    <div class="sub">LAST UPDATED 22 OCTOBER 2026</div>
+    <div class="sub">LAST UPDATED 14 MARCH 2024</div>
     <div class="ln m"></div><div class="ln"></div><div class="ln"></div><div class="ln s"></div>
     <div class="gap"></div>
     <div class="ln"></div><div class="ln same"></div><div class="ln same"></div><div class="ln m"></div>
@@ -712,9 +712,9 @@
   <!-- 11 -->
   <section class="slide" data-play="point" data-steps="2" data-notes="Pause here. This is the line people screenshot, so stop talking after it.">
     <div class="shead"><div class="kicker b">The point</div><h2>Short and honest beats long and false</h2></div>
-    <div class="doc-slot" data-kind="cover" data-stamp="LAST UPDATED 14 MARCH 2024" data-style="left:180px;top:300px;width:420px;height:560px;transform:rotate(-1.4deg)"></div>
-    <div class="doc-slot" data-kind="cover" data-stamp="LAST UPDATED 14 MARCH 2024" data-style="left:1320px;top:302px;width:420px;height:560px;transform:rotate(1.2deg)"></div>
-    <div class="doc-slot" data-kind="cover" data-stamp="LAST UPDATED 22 OCT 2026" data-style="left:812px;top:430px;width:300px;height:300px;padding:26px 24px" data-small="1"></div>
+    <div class="doc-slot" data-kind="cover" data-style="left:180px;top:300px;width:420px;height:560px;transform:rotate(-1.4deg)"></div>
+    <div class="doc-slot" data-kind="cover" data-style="left:1320px;top:302px;width:420px;height:560px;transform:rotate(1.2deg)"></div>
+    <div class="doc-slot" data-kind="cover" data-style="left:812px;top:430px;width:300px;height:300px;padding:26px 24px" data-small="1"></div>
     <div class="caption" data-cap style="left:660px;top:790px;width:600px;text-align:center;opacity:0">
       A policy that claims more than you do is <b>worse than a short one that is true</b>.
     </div>
@@ -1180,10 +1180,6 @@ qa(document, '.doc-slot').forEach(slot => {
     node.classList.add('is-small');
     qa(node, '.ln').forEach((l, i) => { if (i > 5) l.remove(); });
     q(node, '.ttl').style.fontSize = '22px';
-  }
-  if (slot.dataset.stamp) {
-    const st = q(node, '.stamp, .sub');
-    if (st) st.textContent = slot.dataset.stamp;
   }
   slot.replaceWith(node);
 });
