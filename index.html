@@ -451,7 +451,7 @@
     <div class="shead"><div class="kicker b">The law</div><h2>When another law says: keep it</h2></div>
     <div class="cxgrid" style="top:250px;grid-template-columns:repeat(4,1fr)">
       <div class="cxcard" data-in><div class="cn">Accounts</div><div class="big">8 years</div><div class="cd">Books of account and the vouchers behind them, under the Companies Act</div></div>
-      <div class="cxcard" data-in><div class="cn">GST</div><div class="big">72 months</div><div class="cd">Invoices and GST records, counted from the due date of the annual return</div></div>
+      <div class="cxcard" data-in><div class="cn">GST</div><div class="big">72 months <span style="display:block;font-size:.55em;line-height:1.1;margin-top:2px">(6 years)</span></div><div class="cd">Invoices and GST records, counted from the due date of the annual return</div></div>
       <div class="cxcard" data-in><div class="cn">KYC</div><div class="big">5 years</div><div class="cd">Identity records at banks, NBFCs and other regulated entities, after the relationship ends</div></div>
       <div class="cxcard" data-in><div class="cn">DPDP logs</div><div class="big">1 year</div><div class="cd">The DPDP Rules themselves ask you to keep processing logs for at least a year</div></div>
     </div>
@@ -468,7 +468,7 @@
       <div class="cxcard" data-in><div class="ct">A newsletter subscriber says &ldquo;remove me&rdquo;</div><div class="ca" data-in="1">Delete. No law makes you keep a mailing list.</div></div>
       <div class="cxcard" data-in><div class="ct">A job applicant you did not hire, two years ago</div><div class="ca" data-in="1">Delete the CV. The purpose ended when the role was filled.</div></div>
       <div class="cxcard" data-in><div class="ct">A loan customer closes the account and asks for deletion</div><div class="ca" data-in="1">Keep the KYC for 5 years after closing. Delete the rest.</div></div>
-      <div class="cxcard" data-in><div class="ct">A buyer withdraws consent for offers, keeps buying</div><div class="ca" data-in="1">Stop the offers. Order data stays: it serves the orders.</div></div>
+      <div class="cxcard" data-in><div class="ct">A buyer withdraws consent for offers, keeps buying</div><div class="ca" data-in="1">Stop sending offers. Keep the order details: you still need them to deliver.</div></div>
       <div class="cxcard" data-in><div class="ct">An employee leaves the company</div><div class="ca" data-in="1">Keep payroll and tax records. Delete the rest when the exit is done.</div></div>
     </div>
     <svg class="ink"></svg>
@@ -525,14 +525,14 @@
 
   <!-- 14 : backups -->
   <section class="slide" data-play="cxsteps" data-steps="1" data-notes="Be clear that the Act and Rules do not mention backups. This is a practical, defensible approach, not a rule. Nobody expects you to edit a backup tape.">
-    <div class="shead"><div class="kicker">Hard part 2</div><h2>Backups: you don&rsquo;t edit them, you expire them</h2></div>
+    <div class="shead"><div class="kicker">Hard part 2</div><h2>Backups: you don&rsquo;t edit them, you let them expire</h2></div>
     <div class="cxgrid" style="top:280px;grid-template-columns:repeat(4,1fr);gap:50px">
-      <div class="cxcard cxstep" data-in><div class="num">1</div><div class="ct" style="margin-top:14px">Leave it</div><div class="cd">Don&rsquo;t restore a backup just to delete one person from it.</div></div>
-      <div class="cxcard cxstep" data-in><div class="num">2</div><div class="ct" style="margin-top:14px">Put it beyond use</div><div class="cd">Nobody restores it to look her up. Only for disaster recovery.</div></div>
-      <div class="cxcard cxstep" data-in><div class="num">3</div><div class="ct" style="margin-top:14px">Let it expire</div><div class="cd">Backups roll off on a fixed cycle, say 30 or 90 days. Write the cycle down.</div></div>
-      <div class="cxcard cxstep" data-in><div class="num">4</div><div class="ct" style="margin-top:14px">Re-apply on restore</div><div class="cd">If you ever restore, run the deletion list again before going live.</div></div>
+      <div class="cxcard cxstep" data-in><div class="num">1</div><div class="ct" style="margin-top:14px">Don&rsquo;t open it</div><div class="cd">Don&rsquo;t open an old backup just to remove one person from it.</div></div>
+      <div class="cxcard cxstep" data-in><div class="num">2</div><div class="ct" style="margin-top:14px">Don&rsquo;t use it</div><div class="cd">Nobody looks her up in a backup. Backups are only for when a system crashes.</div></div>
+      <div class="cxcard cxstep" data-in><div class="num">3</div><div class="ct" style="margin-top:14px">Let it delete itself</div><div class="cd">Set old backups to delete on their own after a fixed time, like 30 or 90 days. Write it down.</div></div>
+      <div class="cxcard cxstep" data-in><div class="num">4</div><div class="ct" style="margin-top:14px">Restored? Delete again</div><div class="cd">If you ever bring a backup back, delete her data again before using it.</div></div>
     </div>
-    <div class="cxnote" data-in style="top:630px"><b>Tell her honestly:</b> &ldquo;Deleted from live systems today. Our backups expire within 90 days and are not used in the meantime.&rdquo;</div>
+    <div class="cxnote" data-in style="top:630px"><b>What to tell her:</b> &ldquo;We deleted your data from our systems today. A copy in our backups will be deleted on its own within 90 days, and no one will use it till then.&rdquo;</div>
     <svg class="ink"></svg>
   </section>
 
